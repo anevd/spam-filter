@@ -56,7 +56,6 @@ function showComment() {
 	let personInComment = document.querySelector(".chat__name");
 	let photoInComment = document.querySelector(".chat__photo-img");
 	let textInComment = document.querySelector(".chat__comment");
-	let chatItem = document.querySelector(".chat__item");
 	personInComment.innerHTML = person.value;
 	photoInComment.src = photo.value;
 	textInComment.innerHTML = checkSpam();
