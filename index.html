@@ -15,7 +15,21 @@
 				<div class="spam-filter__form-wrapper">
 					<form class="spam-filter__form">
 						<h2 class="spam-filter__title">Оставьте Ваш комментарий</h2>
-						<label for="name" class="form__label">Введите Ваше <span class="form__label_special">ФИО</span>:</label>
+						<div class="spam-filter__checkbox">
+							<div class="spam-filter__checkbox-title">Показывать Ваше имя?</div>
+							<div class="spam-filter__checkbox-wrapper">
+								<label for="yes" class="spam-filter__checkbox-label">Yes</label>
+								<div class="spam-filter__checkbox-custom"></div>
+								<input type="radio" id="yes" name="show-name" class="spam-filter__checkbox-input" checked />
+							</div>
+
+							<div class="spam-filter__checkbox-wrapper">
+								<label for="no" class="spam-filter__checkbox-label">No</label>
+								<div class="spam-filter__checkbox-custom"></div>
+								<input type="radio" id="no" name="show-name" class="spam-filter__checkbox-input" />
+							</div>
+						</div>
+						<label for="name" class="form__label form__label-name">Введите Ваше <span class="form__label_special">ФИО</span>:</label>
 						<input type="text" id="name" class="form__input" required />
 						<label for="photo" class="form__label">Введите ссылку <span class="form__label_special">Вашего аватара</span>:</label>
 						<input type="text" id="photo" class="form__input" />
